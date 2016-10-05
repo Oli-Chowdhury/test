@@ -1,0 +1,5 @@
+name = Francis Crick Layouts
+description = Francis crick layouts
+core = 7.x
+package = Francis Crick
+version = 7.x-1.0

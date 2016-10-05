@@ -1,0 +1,24 @@
+default:
+  autoload:
+    '': %paths.base%/features/bootstrap
+  suites:
+    default:
+      contexts:
+        - FeatureContext
+        - Drupal\DrupalExtension\Context\DrupalContext
+        - Drupal\DrupalExtension\Context\MinkContext
+        - Drupal\DrupalExtension\Context\MessageContext
+        - Drupal\DrupalExtension\Context\DrushContext
+  extensions:
+    Behat\MinkExtension:
+      base_url: http://test-webimpulse.pantheonsite.io
+      goutte: ~
+      selenium2: ~
+    Drupal\DrupalExtension:
+      blackbox: ~
+      drush: ~
+      api_driver: 'drush'
+      drush:
+          root: /Users/chowdho/Sites/devdesktop/cricknet/docroot
+      
+
